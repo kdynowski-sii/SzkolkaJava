@@ -40,16 +40,20 @@ public class ZadanieDrugie {
 
     private static boolean checkIfGuessed(int guessedNumber) {
         if (guessedNumber == numberToGuess) return true;
-        if (guessedNumber > numberToGuess) System.out.println("Too large");
-        else System.out.println("Too small");
+        if (guessedNumber > numberToGuess) System.out.println("Your number is GREATER than the one you are trying to guess");
+        else System.out.println("Your number is LOWER than the one you are trying to guess");
         return false;
     }
 
     private static void sendMessage(int noTries) {
+        if (noTries == 0) return;
         if (noTries > 1) {
             System.out.println(noTries + " tries left");
+            System.out.println("Please try again");
+
         } else {
             System.out.println("One try left");
+            System.out.println("Please try again");
         }
     }
 
