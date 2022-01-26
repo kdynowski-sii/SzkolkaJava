@@ -1,3 +1,5 @@
+package Lekcja1;
+
 import java.util.Scanner;
 
 public class ZadanieTrzecie {
@@ -42,9 +44,9 @@ public class ZadanieTrzecie {
     private static void presentAvgMax(int[] numbers){
         float avg = 0.f;
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < numbers.length; i++) {
-            max = (max > numbers[i]) ? max : numbers[i];
-            avg += numbers[i];
+        for (int number : numbers) {
+            max = Math.max(max, number);
+            avg += number;
         }
         avg /= numbers.length;
         System.out.println("Average of given numbers is: " + avg + "\nMax of given numbers is: " + max);
