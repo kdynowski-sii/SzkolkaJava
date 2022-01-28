@@ -1,4 +1,4 @@
-package Lekcja2;
+package lekcja2;
 
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -31,8 +31,7 @@ public class ZadanieDomowe {
 
     private static int getAsciiFromId(int id){
 
-//        Losowanie z zakresu 0 - 71
-//        MAPA:
+//        MAP:
 //        0	33
 //        1-8	35-42
 //        9-18	48-57
